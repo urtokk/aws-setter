@@ -1,0 +1,4 @@
+email: "me@example.com"
+
+profiles:
+        <named-profile-form-aws-config>: "arn:aws:iam::<the role you want to assume>"
