@@ -173,7 +173,7 @@ impl AwsClient {
 
         let cred_string = serde_ini::to_string(&self.credentials)?;
         let path = format!("{}/credentials", &self.root);
-        let mut cred_file = OpenOptions::new().write(true).open(path)?;
+        let mut cred_file = OpenOptions::new().write(true).create(true).open(&path)?;
         cred_file.write_all(cred_string.as_bytes())?;
         cred_file.flush()?;
         Ok(())
