@@ -1,6 +1,6 @@
 [package]
 name = "aws-setter"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Torben Diegel <xendios@gmail.com>"]
 edition = "2018"
 description = "tool to get temporary credentials for a AWS role and write them to credentials file"
